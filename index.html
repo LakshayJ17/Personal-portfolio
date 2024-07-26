@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero animate__animated animate__fadeIn">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm Lakshay Jain, a Web Developer.</p>
+        </div>
+    </section>
+
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer with a knack for creating user-centric websites. My journey began with a
+            curiosity for how things work on the internet, which quickly evolved into a love for coding and designing. I
+            have experience in HTML, CSS, JavaScript, and various modern frameworks. When I'm not coding, I enjoy
+            exploring new technologies, reading about web development trends, and contributing to open-source projects.
+            I'm always eager to learn and take on new challenges.</p>
+        <p>PS : " I'm a web developer who can debug code and solve DSA problems faster than you can say 'Big O
+            notation'! "</p>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Market Math</h3>
+            <p>Market Math is a web application that offers a collection of stock market calculators to assist investors
+                in making informed financial decisions.</p>
+            <div class="project-links">
+                <i class="fa-brands fa-github"><a href="https://github.com/LakshayJ17/stock-market-calculator"
+                        target="_blank">Market Math - GitHub</a></i>
+                <i class="fa-solid fa-link"><a href="https://stockmarket-calculators.netlify.app/"
+                        target="_blank">Market Math</a></i>
+            </div>
+
+        </div>
+        <div class="project">
+            <h3>Guess the number</h3>
+            <p>A simple yet engaging game where players attempt to guess a randomly generated number within a specified
+                range. The game provides feedback on whether each guess is too high or too low, guiding players towards
+                the correct answer. </p>
+            <div class="project-links">
+                <i class="fa-brands fa-github"><a
+                        href="https://github.com/LakshayJ17/JS-basic-projects/tree/main/Guess%20the%20number"
+                        target="_blank">Guess the number - GitHub</a></i>
+                <i class="fa-solid fa-link"><a href="https://random-guess-numbergame.netlify.app/" target="_blank">Guess
+                        the number </a></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lakshay Jain. All Rights Reserved.</p>
+        <div class="sm-links">
+                <a href="https://www.linkedin.com/in/lakshayj17/" target="_blank" >
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            
+            
+                <a href="https://github.com/LakshayJ17" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            
+            
+                <a href="https://x.com/Lakshcode" target="_blank" >
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            
+            <a href="https://leetcode.com/u/meLaksh17/" target="_blank" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M13.483 0a1.37 1.37 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.3 5.3 0 0 0-1.209 2.104a5 5 0 0 0-.125.513a5.5 5.5 0 0 0 .062 2.362a6 6 0 0 0 .349 1.017a5.9 5.9 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.38 1.38 0 0 0-1.951-.003l-2.396 2.392a3.02 3.02 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.7 2.7 0 0 1 .066-.523a2.55 2.55 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a8676eedf4.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

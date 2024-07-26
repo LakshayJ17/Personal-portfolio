@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&family=Varela+Round&display=swap');
+
+body {
+    font-family: "Varela Round", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    background: #121212;
+}
+
+header {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #bb86fc;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: slideInDown 1s forwards;
+    color: #bb86fc;
+}
+
+p {
+    font-size: 1.2em;
+    animation: fadeIn 2s forwards;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+#about {
+    padding: 200px 20px;
+    text-align: center;
+    background: #1f1f1f;
+    height: 100vh;
+}
+
+#about p {
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background: #bb86fc;
+    margin: 10px auto 0;
+}
+
+#projects {
+    text-align: center;
+    padding-top: 155px;
+    height: 100vh;
+}
+
+.project {
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.project p {
+    text-align: justify;
+    padding: 0 100px;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.project-links i {
+    padding: 10px 100px;
+    font-size: 14px;
+}
+
+.project-links i a {
+    color: #00FFFF;
+    padding-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.project-links i a:hover {
+    color: #bb86fc;
+}
+
+#contact {
+    text-align: center;
+    padding-top: 250px;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    background: #2b2b2b;
+    color: #f0f0f0;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #bb86fc;
+}
+
+button {
+    border: 3em;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+    margin-top: 20px;
+    padding: 0.7em 2em;
+    border-radius: 65px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+    -webkit-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
+    color: white;
+}
+
+button:after {
+    content: "";
+    border-radius: 18px;
+    position: absolute;
+    margin: 4px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: #0e0e10;
+}
+
+button:hover {
+    background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1f1f1f;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 8px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer p {
+    margin-left: 50px;
+}
+
+.sm-links {
+    margin-right: 50px;
+}
+
+.sm-links i,
+svg {
+    padding-right: 20px;
+    color: white;
+
+}
+
+.sm-links i,
+svg:hover {
+    cursor: pointer;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
