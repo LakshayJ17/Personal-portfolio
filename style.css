@@ -259,3 +259,90 @@ svg:hover {
         opacity: 1;
     }
 }
+
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    .hero-section {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    #about {
+        padding: 150px 20px;
+        height: auto;
+    }
+
+    #projects {
+        padding-top: 100px;
+    }
+
+    .project p {
+        padding: 0 20px;
+    }
+
+    .project-links i {
+        padding: 10px 20px;
+    }
+
+    #contact {
+        padding-top: 150px;
+    }
+
+    input,
+    textarea {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer p,
+    .sm-links {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+    }
+
+    .project-links {
+        align-items: center;
+    }
+
+    .project-links i {
+        padding: 5px;
+    }
+}
